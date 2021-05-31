@@ -37,7 +37,8 @@ class _SpotifyDataState extends State<SpotifyData> {
     setState(() {
       isLoading = true;
     });
-    var url = Uri.parse('https://itunes.apple.com/search?term=army+zayde+wolf');
+    var url =
+        Uri.parse('https://itunes.apple.com/search?term=rain of castamere');
     var response = await http.get(url);
     print(json.decode(response.body)['results'][0].runtimeType);
 
