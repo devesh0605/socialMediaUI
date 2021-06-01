@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_ui/data/data.dart';
+import 'package:social_media_ui/screens/home_screen.dart';
 import 'package:social_media_ui/screens/login_screen.dart';
+import 'package:social_media_ui/screens/profile_screen.dart';
 
 class CustomDrawer extends StatelessWidget {
   @override
@@ -67,10 +69,10 @@ class CustomDrawer extends StatelessWidget {
                 leading: Icon(Icons.dashboard),
                 title: Text('Home'),
                 onTap: () {
-                  Navigator.of(context).pop();
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  //   return HomeScreen();
-                  // }));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return HomeScreen();
+                  }));
                 },
               ),
               ListTile(
@@ -97,10 +99,12 @@ class CustomDrawer extends StatelessWidget {
                 leading: Icon(Icons.account_circle),
                 title: Text('Your Profile'),
                 onTap: () {
-                  Navigator.of(context).pop();
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  //   return HomeScreen();
-                  // }));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return ProfileScreen(
+                      user: currentUser,
+                    );
+                  }));
                 },
               ),
               ListTile(
