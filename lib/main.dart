@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_ui/screens/login_screen.dart';
+import 'package:social_media_ui/screens/random_user.dart';
 import 'package:social_media_ui/screens/spotify_screen.dart';
 
 void main() {
@@ -11,11 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Social UI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
       ),
-      home: SpotifyData(),
+      home: LoginScreen(),
     );
   }
 }
