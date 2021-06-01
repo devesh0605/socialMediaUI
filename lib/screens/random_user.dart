@@ -31,10 +31,6 @@ class _RandomUserState extends State<RandomUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('My users'),
-        centerTitle: true,
-      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.call),
         onPressed: getRandomUsers,
