@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_ui/screens/latest_screen.dart';
 import 'package:social_media_ui/screens/random_user.dart';
 import 'package:social_media_ui/screens/spotify_screen.dart';
 
@@ -56,16 +57,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               tabs: [
                 Tab(
-                  text: 'Trending',
+                  text: 'Latest',
                 ),
                 Tab(
-                  text: 'Latest',
+                  text: 'Trending',
                 ),
               ],
             ),
           ),
           body: TabBarView(
             children: [
+              LatestScreen(),
               RandomUser(),
             ],
           ),
