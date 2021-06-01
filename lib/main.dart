@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_ui/screens/login_screen.dart';
-import 'package:social_media_ui/screens/random_user.dart';
-import 'package:social_media_ui/screens/spotify_screen.dart';
 import 'package:flutter/services.dart';
 
 void main() {

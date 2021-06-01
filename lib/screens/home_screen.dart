@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_ui/screens/latest_screen.dart';
 import 'package:social_media_ui/screens/random_user.dart';
-import 'package:social_media_ui/screens/spotify_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

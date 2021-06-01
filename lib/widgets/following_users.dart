@@ -37,7 +37,9 @@ class _FollowingUsersState extends State<FollowingUsers> {
                 width: 60,
                 decoration: BoxDecoration(
                   border: Border.all(
-                      width: 2.0, color: Theme.of(context).primaryColor),
+                    width: 2.0,
+                    color: Theme.of(context).primaryColor,
+                  ),
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
